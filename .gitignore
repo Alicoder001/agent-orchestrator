@@ -60,3 +60,9 @@ agent-orchestrator.yaml
 
 # Local guard token for internal code edits
 .internal-edit-unlock
+
+# Desktop/Tauri build artifacts
+packages/desktop/.runlogs/
+packages/desktop/dist-ui/
+packages/desktop/src-tauri/target/
+packages/desktop/src-tauri/gen/

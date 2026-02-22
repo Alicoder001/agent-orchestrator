@@ -16,8 +16,16 @@ interface CreateDesktopSidecarServerOptions {
   shellSelection?: ShellSelection;
 }
 
+function applyCors(res: ServerResponse): void {
+  res.setHeader("Access-Control-Allow-Origin", "*");
+  res.setHeader("Access-Control-Allow-Methods", "GET,POST,OPTIONS");
+  res.setHeader("Access-Control-Allow-Headers", "Content-Type, Authorization");
+  res.setHeader("Access-Control-Max-Age", "86400");
+}
+
 function sendJson(res: ServerResponse, status: number, body: unknown): void {
   res.statusCode = status;
+  applyCors(res);
   res.setHeader("Content-Type", "application/json; charset=utf-8");
   res.end(JSON.stringify(body));
 }
@@ -81,6 +89,13 @@ export function createDesktopSidecarServer(opts?: CreateDesktopSidecarServerOpti
     const pathname = url.pathname;
 
     try {
+      if (method === "OPTIONS") {
+        applyCors(res);
+        res.statusCode = 204;
+        res.end();
+        return;
+      }
+
       if (method === "GET" && pathname === "/health") {
         return sendJson(res, 200, {
           ok: true,

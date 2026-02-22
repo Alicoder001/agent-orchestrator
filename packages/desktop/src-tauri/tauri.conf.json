@@ -4,10 +4,10 @@
   "version": "0.1.0",
   "identifier": "io.composio.agentorchestrator.desktop",
   "build": {
-    "beforeDevCommand": "pnpm --filter @composio/ao-desktop dev",
-    "beforeBuildCommand": "pnpm --filter @composio/ao-desktop build",
+    "beforeDevCommand": "pnpm --filter @composio/ao-desktop dev:desktop",
+    "beforeBuildCommand": "pnpm --filter @composio/ao-desktop build:ui",
     "devUrl": "http://localhost:1420",
-    "frontendDist": "../dist"
+    "frontendDist": "../dist-ui"
   },
   "app": {
     "windows": [

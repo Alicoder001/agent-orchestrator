@@ -76,6 +76,18 @@ Use this if:
 - You need agent-specific configuration
 - You're evaluating different AI coding assistants
 
+### [zai-glm.yaml](./zai-glm.yaml)
+
+**Using z.ai GLM models via the `zai` agent**
+
+Shows how to route the agent through z.ai's Claude-compatible endpoint.
+
+Use this if:
+
+- You want to run GLM models (for example, `glm-4.5`)
+- You want a dedicated z.ai agent configuration
+- You manage API keys via environment variables
+
 ## Configuration Tips
 
 1. **Start simple** - Use `simple-github.yaml` as a starting point
@@ -94,6 +106,9 @@ export LINEAR_API_KEY="lin_api_..."
 
 # Slack notifications
 export SLACK_WEBHOOK_URL="https://hooks.slack.com/services/..."
+
+# z.ai (GLM) agent
+export ZAI_API_KEY="your_zai_key"
 
 # GitHub (usually set by gh CLI)
 # export GITHUB_TOKEN="ghp_..."

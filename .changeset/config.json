@@ -14,6 +14,7 @@
       "@composio/ao-plugin-agent-codex",
       "@composio/ao-plugin-agent-aider",
       "@composio/ao-plugin-agent-opencode",
+      "@composio/ao-plugin-agent-zai",
       "@composio/ao-plugin-workspace-worktree",
       "@composio/ao-plugin-workspace-clone",
       "@composio/ao-plugin-tracker-github",

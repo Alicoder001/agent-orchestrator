@@ -55,6 +55,9 @@ const AgentSpecificConfigSchema = z
   .object({
     permissions: z.enum(["skip", "default"]).optional(),
     model: z.string().optional(),
+    zaiApiKeyEnv: z.string().optional(),
+    zaiBaseUrl: z.string().optional(),
+    zaiModel: z.string().optional(),
   })
   .passthrough();
 

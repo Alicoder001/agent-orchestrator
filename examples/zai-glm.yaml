@@ -1,0 +1,28 @@
+# Using z.ai (GLM) through the built-in zai agent adapter
+# Requires: export ZAI_API_KEY="your_key" (or ANTHROPIC_AUTH_TOKEN)
+
+dataDir: ~/.agent-orchestrator
+worktreeDir: ~/.worktrees
+
+defaults:
+  agent: zai
+  runtime: tmux
+  workspace: worktree
+
+projects:
+  my-app:
+    repo: owner/my-app
+    path: ~/my-app
+    defaultBranch: main
+
+    # z.ai-specific configuration
+    agentConfig:
+      model: glm-4.5
+      # Optional overrides:
+      # zaiModel: glm-4.5-flash
+      # zaiApiKeyEnv: ZAI_API_KEY
+      # zaiBaseUrl: https://api.z.ai/api/anthropic
+
+    agentRules: |
+      Keep changes small and testable.
+      Run project checks before pushing.

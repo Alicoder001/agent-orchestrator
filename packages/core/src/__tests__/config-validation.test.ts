@@ -336,6 +336,33 @@ describe("Config Schema Validation", () => {
     expect(validated.projects.proj1.sessionPrefix).toBeDefined();
     expect(validated.projects.proj1.sessionPrefix).toBe("test"); // "test" is 4 chars, used as-is
   });
+
+  it("accepts z.ai-specific agentConfig fields", () => {
+    const config = {
+      projects: {
+        proj1: {
+          path: "/repos/test",
+          repo: "org/test",
+          defaultBranch: "main",
+          agent: "zai",
+          agentConfig: {
+            model: "glm-4.5",
+            zaiModel: "glm-4.5-flash",
+            zaiApiKeyEnv: "ZAI_API_KEY",
+            zaiBaseUrl: "https://api.z.ai/api/anthropic",
+          },
+        },
+      },
+    };
+
+    const validated = validateConfig(config);
+    expect(validated.projects.proj1.agentConfig?.model).toBe("glm-4.5");
+    expect(validated.projects.proj1.agentConfig?.zaiModel).toBe("glm-4.5-flash");
+    expect(validated.projects.proj1.agentConfig?.zaiApiKeyEnv).toBe("ZAI_API_KEY");
+    expect(validated.projects.proj1.agentConfig?.zaiBaseUrl).toBe(
+      "https://api.z.ai/api/anthropic",
+    );
+  });
 });
 
 describe("Config Defaults", () => {

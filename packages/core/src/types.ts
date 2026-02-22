@@ -904,6 +904,12 @@ export interface NotifierConfig {
 export interface AgentSpecificConfig {
   permissions?: "skip" | "default";
   model?: string;
+  /** z.ai API key environment variable name (default: ZAI_API_KEY) */
+  zaiApiKeyEnv?: string;
+  /** z.ai Claude-compatible endpoint override */
+  zaiBaseUrl?: string;
+  /** z.ai model fallback when agentConfig.model is not set */
+  zaiModel?: string;
   [key: string]: unknown;
 }
 

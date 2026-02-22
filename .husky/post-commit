@@ -1,0 +1,9 @@
+#!/bin/sh
+
+# Auto-lock internal edits after each successful commit.
+LOCK_FILE=".internal-edit-unlock"
+
+if [ -f "$LOCK_FILE" ]; then
+  rm -f "$LOCK_FILE"
+  echo "Internal edit lock restored."
+fi

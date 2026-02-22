@@ -1,0 +1,23 @@
+#!/bin/sh
+
+# Allow pushes only to origin remote.
+remote_name="$1"
+
+if [ -z "$remote_name" ]; then
+  echo ""
+  echo "ERROR: Push blocked (remote name was not provided)."
+  echo "Only pushes to 'origin' are allowed."
+  echo ""
+  exit 1
+fi
+
+if [ "$remote_name" != "origin" ]; then
+  echo ""
+  echo "ERROR: Push blocked."
+  echo "Remote '$remote_name' is not allowed."
+  echo "Policy: push only to 'origin' (never to upstream)."
+  echo ""
+  exit 1
+fi
+
+exit 0

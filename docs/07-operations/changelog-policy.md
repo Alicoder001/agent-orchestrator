@@ -1,22 +1,65 @@
 # Changelog Policy
 
-## Purpose
+## Maqsad
 
-Define what belongs in the changelog and what does not.
+Ushbu hujjat platformadagi changelog yozish, formatlash va maintain qilish qoidalarini belgilaydi.
 
-## Include
+Bu hujjat `repo-governance.md` (conventional commits) va `deployment-architecture.md` (versioning) ga asoslanadi.
 
-- User-visible changes
-- Architecture-level shifts
-- Breaking changes
-- Important operational changes
+---
 
-## Exclude
+## Changelog formati
 
-- Noise-level refactors
-- Temporary experiments
-- Internal-only micro-edits unless strategically important
+[Keep a Changelog](https://keepachangelog.com/) standartiga asoslangan:
 
-## Update Rules
+```markdown
+# Changelog
 
-- TODO
+## [1.1.0] - 2026-03-15
+
+### Added
+- Organization invite flow (email-based)
+- GitHub OAuth login
+
+### Changed
+- JWT access token TTL default 30m → 15m
+
+### Fixed
+- Refresh token rotation race condition
+
+### Removed
+- Legacy password reset endpoint (replaced by new flow)
+```
+
+---
+
+## Toifalar
+
+| Toifa | Tavsif |
+|-------|--------|
+| `Added` | Yangi feature yoki imkoniyat |
+| `Changed` | Mavjud funksionallik o'zgarishi |
+| `Deprecated` | Tez orada o'chirilishi rejalashtirilgan |
+| `Removed` | O'chirilgan feature |
+| `Fixed` | Bug tuzatish |
+| `Security` | Xavfsizlik bilan bog'liq o'zgarish |
+
+---
+
+## Qoidalar
+
+| Qoida | Tavsif |
+|-------|--------|
+| Har bir release uchun changelog yangilanadi | Tag qo'yishdan oldin |
+| Changelog `CHANGELOG.md` da repo root'da saqlanadi | — |
+| Yozish tili: inglizcha, present tense | "Add", "Fix", "Remove" |
+| Breaking change `[BREAKING]` bilan belgilanadi | `### Changed` ichida |
+| Changelog PR merge vaqtida developer tomonidan yangilanadi | — |
+| `Unreleased` section mavjud — hali tag bo'lmagan o'zgarishlar uchun | — |
+
+---
+
+## Versiya
+
+- v1.0
+- Status: **APPROVED**

@@ -1,0 +1,301 @@
+# 📊 Documentation Quality Audit — Agent Orchestrator
+
+> **Audit sanasi:** 2026-03-09
+> **Auditor roli:** Principal Software Architect & Documentation Engineer
+> **Audit scope:** `docs/` papkasidagi barcha 15 papka, 100+ hujjat
+
+---
+
+## Baholash shkalasi
+
+| Daraja | Tavsif |
+|--------|--------|
+| **A** | Professional, to'liq, cross-reference bor, implementation-ready |
+| **B** | Yaxshi yozilgan, lekin kichik bo'shliqlar bor |
+| **C** | Qisman yozilgan — asosiy tuzilma bor, lekin ko'p TODO |
+| **D** | Placeholder — faqat sarlavha va TODO |
+| **—** | Template fayl (baholanmaydi) |
+
+---
+
+## 00-foundation/
+
+| Hujjat | Holat | Sifat | Hajm | Izoh |
+|--------|-------|-------|------|------|
+| [vision.md](file:///d:/projects/agent-orchestrator/docs/00-foundation/vision.md) | ✅ To'liq | **A** | 3.3KB | Professional — problem, target users, success criteria to'liq |
+| [scope.md](file:///d:/projects/agent-orchestrator/docs/00-foundation/scope.md) | ✅ To'liq | **A** | 5.2KB | In/out scope, assumptions, constraints aniq |
+| [platform-thesis.md](file:///d:/projects/agent-orchestrator/docs/00-foundation/platform-thesis.md) | ✅ To'liq | **A** | 3.4KB | Core, workflow, ecosystem thesis'lari mukammal |
+| [domain-map.md](file:///d:/projects/agent-orchestrator/docs/00-foundation/domain-map.md) | ✅ To'liq | **A** | 5.1KB | ASCII diagram, ownership xaritasi bor |
+| [product-map.md](file:///d:/projects/agent-orchestrator/docs/00-foundation/product-map.md) | ✅ To'liq | **A** | 3.6KB | Product area'lar, user journey, priority jadvali |
+| [business-context.md](file:///d:/projects/agent-orchestrator/docs/00-foundation/business-context.md) | ✅ To'liq | **A** | 5.6KB | Business model, stakeholders, risks — to'liq |
+| [project-overview.md](file:///d:/projects/agent-orchestrator/docs/00-foundation/project-overview.md) | ✅ To'liq | **A** | 3.1KB | Plain-language tushuntirish, differentiators |
+
+> **Xulosa:** Foundation 100% to'liq. Hech qanday ish kerak emas. ✅
+
+---
+
+## 01-architecture/
+
+| Hujjat | Holat | Sifat | Hajm | Izoh |
+|--------|-------|-------|------|------|
+| [bounded-contexts.md](file:///d:/projects/agent-orchestrator/docs/01-architecture/bounded-contexts.md) | ✅ To'liq | **A** | 5.2KB | 7 context, ownership, event'lar, qoidalar |
+| [application-architecture.md](file:///d:/projects/agent-orchestrator/docs/01-architecture/application-architecture.md) | ✅ To'liq | **A** | 10.6KB | Go layout, module structure, kod misollari |
+| [data-architecture.md](file:///d:/projects/agent-orchestrator/docs/01-architecture/data-architecture.md) | ✅ To'liq | **A** | 6.8KB | Schema, naming, cache, Redis scope — mukammal |
+| [security-architecture.md](file:///d:/projects/agent-orchestrator/docs/01-architecture/security-architecture.md) | ✅ To'liq | **A** | 8.7KB | Auth flows, RBAC matrix, JWT, audit — juda yaxshi |
+| [system-context.md](file:///d:/projects/agent-orchestrator/docs/01-architecture/system-context.md) | ✅ To'liq | **A** | 4.9KB | Aktorlar, tashqi tizimlar, trust chegaralari |
+| [final-technology-stack.md](file:///d:/projects/agent-orchestrator/docs/01-architecture/final-technology-stack.md) | ✅ To'liq | **A** | 10.2KB | Stack qarorlari, sabablar, to'liq argumentatsiya |
+| [platform-integration-architecture.md](file:///d:/projects/agent-orchestrator/docs/01-architecture/platform-integration-architecture.md) | ✅ To'liq | **A** | 4.3KB | Multi-surface, multi-runtime, multi-provider |
+| [legacy-migration-blueprint.md](file:///d:/projects/agent-orchestrator/docs/01-architecture/legacy-migration-blueprint.md) | ✅ To'liq | **A** | 10.9KB | Workstream'lar, classification, decision gates |
+| [legacy-monorepo-analysis.md](file:///d:/projects/agent-orchestrator/docs/01-architecture/legacy-monorepo-analysis.md) | ✅ To'liq | **A** | 9.4KB | To'liq tahlil, recommendation'lar bilan |
+| [business-logic-architecture.md](file:///d:/projects/agent-orchestrator/docs/01-architecture/business-logic-architecture.md) | ❌ Placeholder | **D** | 145B | Butunlay TODO — 4 section'da 4 TODO |
+| [deployment-architecture.md](file:///d:/projects/agent-orchestrator/docs/01-architecture/deployment-architecture.md) | ❌ Placeholder | **D** | 148B | Butunlay TODO |
+| [integration-architecture.md](file:///d:/projects/agent-orchestrator/docs/01-architecture/integration-architecture.md) | ❌ Placeholder | **D** | 145B | Butunlay TODO |
+
+> **Xulosa:** 9 ta A-darajali hujjat, 3 ta placeholder. ⚠️
+
+---
+
+## 02-standards/
+
+| Hujjat | Holat | Sifat | Hajm | Izoh |
+|--------|-------|-------|------|------|
+| [memory-write-policy.md](file:///d:/projects/agent-orchestrator/docs/02-standards/memory-write-policy.md) | ✅ To'liq | **B** | 1.2KB | Yaxshi, lekin misol yo'q |
+| [prompt-golden-rules.md](file:///d:/projects/agent-orchestrator/docs/02-standards/prompt-golden-rules.md) | ✅ To'liq | **B** | 1.0KB | Ixcham, lekin yetarli |
+| [api-conventions.md](file:///d:/projects/agent-orchestrator/docs/02-standards/api-conventions.md) | ❌ Placeholder | **D** | 118B | Butunlay TODO |
+| [coding-standards.md](file:///d:/projects/agent-orchestrator/docs/02-standards/coding-standards.md) | ❌ Placeholder | **D** | 110B | Butunlay TODO |
+| [configuration-strategy.md](file:///d:/projects/agent-orchestrator/docs/02-standards/configuration-strategy.md) | ❌ Placeholder | **D** | 150B | Butunlay TODO |
+| [engineering-principles.md](file:///d:/projects/agent-orchestrator/docs/02-standards/engineering-principles.md) | ❌ Placeholder | **D** | 103B | Butunlay TODO |
+| [naming-conventions.md](file:///d:/projects/agent-orchestrator/docs/02-standards/naming-conventions.md) | ❌ Placeholder | **D** | 126B | Butunlay TODO |
+| [observability-standards.md](file:///d:/projects/agent-orchestrator/docs/02-standards/observability-standards.md) | ❌ Placeholder | **D** | 118B | Butunlay TODO |
+| [testing-strategy.md](file:///d:/projects/agent-orchestrator/docs/02-standards/testing-strategy.md) | ❌ Placeholder | **D** | 138B | Butunlay TODO |
+
+> **Xulosa:** 2 ta to'liq, 7 ta placeholder. Bu eng zaif papka. 🔴
+
+---
+
+## 03-templates/
+
+| Hujjat | Holat | Sifat | Hajm | Izoh |
+|--------|-------|-------|------|------|
+| [adr-template.md](file:///d:/projects/agent-orchestrator/docs/03-templates/adr-template.md) | — | Template | 106B | Strukturali skeleton |
+| [feature-spec-template.md](file:///d:/projects/agent-orchestrator/docs/03-templates/feature-spec-template.md) | — | Template | 162B | Strukturali skeleton |
+| [package-template.md](file:///d:/projects/agent-orchestrator/docs/03-templates/package-template.md) | — | Template | 125B | Strukturali skeleton |
+| [runbook-template.md](file:///d:/projects/agent-orchestrator/docs/03-templates/runbook-template.md) | — | Template | 111B | Strukturali skeleton |
+| [service-template.md](file:///d:/projects/agent-orchestrator/docs/03-templates/service-template.md) | — | Template | 125B | Strukturali skeleton |
+
+> **Xulosa:** Template papka — baholanmaydi. To'ldirishga hojat yo'q. ✅
+
+---
+
+## 04-roadmap/
+
+| Hujjat | Holat | Sifat | Hajm | Izoh |
+|--------|-------|-------|------|------|
+| [platform-roadmap.md](file:///d:/projects/agent-orchestrator/docs/04-roadmap/platform-roadmap.md) | ✅ To'liq | **A** | 6.7KB | Phase 0-5, dependency chain, risks |
+| [implementation-sequencing.md](file:///d:/projects/agent-orchestrator/docs/04-roadmap/implementation-sequencing.md) | ✅ To'liq | **A** | 5.6KB | Sprint 1-4, exit criteria, risk matrix |
+
+> **Xulosa:** 100% to'liq. ✅
+
+---
+
+## 05-governance/
+
+| Hujjat | Holat | Sifat | Hajm | Izoh |
+|--------|-------|-------|------|------|
+| [repo-governance.md](file:///d:/projects/agent-orchestrator/docs/05-governance/repo-governance.md) | ✅ To'liq | **A** | 4.2KB | Branch, commit, agent qoidalari — mukammal |
+| [agent-operating-model.md](file:///d:/projects/agent-orchestrator/docs/05-governance/agent-operating-model.md) | ✅ To'liq | **A** | 3.8KB | Coordination, escalation, override — to'liq |
+| [architecture-decision-process.md](file:///d:/projects/agent-orchestrator/docs/05-governance/architecture-decision-process.md) | ⚠️ Qisman | **C** | 440B | Decision flow bor, lekin 3 TODO |
+| [definition-of-done.md](file:///d:/projects/agent-orchestrator/docs/05-governance/definition-of-done.md) | ⚠️ Qisman | **C** | 254B | Asosiy checklist bor, exceptions TODO |
+| [definition-of-ready.md](file:///d:/projects/agent-orchestrator/docs/05-governance/definition-of-ready.md) | ⚠️ Qisman | **C** | 209B | Checklist bor, open questions TODO |
+| [change-management.md](file:///d:/projects/agent-orchestrator/docs/05-governance/change-management.md) | ❌ Placeholder | **D** | 240B | Butunlay TODO |
+| [ownership-model.md](file:///d:/projects/agent-orchestrator/docs/05-governance/ownership-model.md) | ❌ Placeholder | **D** | 269B | Layers ro'yxati bor, mapping TODO |
+| [workstream-management.md](file:///d:/projects/agent-orchestrator/docs/05-governance/workstream-management.md) | ❌ Placeholder | **D** | 310B | Workstream types bor, rules TODO |
+
+> **Xulosa:** 2 to'liq, 3 qisman, 3 placeholder. ⚠️
+
+---
+
+## 06-adrs/
+
+| Hujjat | Holat | Sifat | Hajm | Izoh |
+|--------|-------|-------|------|------|
+| [ADR-001-go-core-backend.md](file:///d:/projects/agent-orchestrator/docs/06-adrs/ADR-001-go-core-backend.md) | ✅ To'liq | **A** | 2.5KB | Sabablar, alternativlar, oqibatlar |
+| [ADR-002-desktop-tauri.md](file:///d:/projects/agent-orchestrator/docs/06-adrs/ADR-002-desktop-tauri.md) | ✅ To'liq | **A** | 1.6KB | Tauri tanlash sabablari |
+| [ADR-003-modular-monolith.md](file:///d:/projects/agent-orchestrator/docs/06-adrs/ADR-003-modular-monolith.md) | ✅ To'liq | **A** | 2.1KB | Monolith → extraction strategiyasi |
+| [ADR-004-event-bus-strategy.md](file:///d:/projects/agent-orchestrator/docs/06-adrs/ADR-004-event-bus-strategy.md) | ✅ To'liq | **A** | 3.3KB | Interface + Go channel, kod misollari |
+| [ADR-005-frontend-state-management.md](file:///d:/projects/agent-orchestrator/docs/06-adrs/ADR-005-frontend-state-management.md) | ✅ To'liq | **A** | 3.5KB | TanStack Query + Zustand |
+| [ADR-000-template.md](file:///d:/projects/agent-orchestrator/docs/06-adrs/ADR-000-template.md) | — | Template | 152B | ADR template |
+
+> **Xulosa:** 5/5 ADR to'liq. ✅
+
+---
+
+## 07-operations/
+
+| Hujjat | Holat | Sifat | Hajm | Izoh |
+|--------|-------|-------|------|------|
+| [prompt-and-memory-evaluation.md](file:///d:/projects/agent-orchestrator/docs/07-operations/prompt-and-memory-evaluation.md) | ✅ To'liq | **B** | 1.4KB | Evaluation framework |
+| [changelog-policy.md](file:///d:/projects/agent-orchestrator/docs/07-operations/changelog-policy.md) | ⚠️ Qisman | **C** | 348B | Asosiy qoidalar bor, detail TODO |
+| [coordination-rhythm.md](file:///d:/projects/agent-orchestrator/docs/07-operations/coordination-rhythm.md) | ❌ Placeholder | **D** | 256B | TODO |
+| [incident-management.md](file:///d:/projects/agent-orchestrator/docs/07-operations/incident-management.md) | ❌ Placeholder | **D** | 197B | TODO |
+| [release-process.md](file:///d:/projects/agent-orchestrator/docs/07-operations/release-process.md) | ❌ Placeholder | **D** | 131B | TODO |
+
+> **Xulosa:** 1 to'liq, 1 qisman, 3 placeholder. ⚠️
+
+---
+
+## 08-worklogs/
+
+| Hujjat | Holat | Sifat | Hajm | Izoh |
+|--------|-------|-------|------|------|
+| [status-board.md](file:///d:/projects/agent-orchestrator/docs/08-worklogs/status-board.md) | ✅ To'liq | **B** | 1.5KB | Phase tracking, agent status |
+
+> **Xulosa:** Jurnallar papkasi — status board ishlaydi. ✅
+
+---
+
+## 09-product/
+
+| Hujjat | Holat | Sifat | Hajm | Izoh |
+|--------|-------|-------|------|------|
+| [domain-model.md](file:///d:/projects/agent-orchestrator/docs/09-product/domain-model.md) | ✅ To'liq | **A** | 9.7KB | 11 entity, lifecycle, munosabatlar — etalon hujjat |
+| [surface-and-access-model.md](file:///d:/projects/agent-orchestrator/docs/09-product/surface-and-access-model.md) | ✅ To'liq | **A** | 2.9KB | Multi-surface, access model |
+| [collaboration-model.md](file:///d:/projects/agent-orchestrator/docs/09-product/collaboration-model.md) | ❌ Placeholder | **D** | 173B | TODO |
+| [department-model.md](file:///d:/projects/agent-orchestrator/docs/09-product/department-model.md) | ❌ Placeholder | **D** | 187B | Department types bor, rules TODO |
+| [mode-system.md](file:///d:/projects/agent-orchestrator/docs/09-product/mode-system.md) | ❌ Placeholder | **D** | 196B | Mode ro'yxati bor, purpose TODO |
+| [organization-model.md](file:///d:/projects/agent-orchestrator/docs/09-product/organization-model.md) | ❌ Placeholder | **D** | 219B | Concepts bor, rules TODO |
+| [platform-positioning.md](file:///d:/projects/agent-orchestrator/docs/09-product/platform-positioning.md) | ❌ Placeholder | **D** | 145B | Butunlay TODO |
+| [project-space-model.md](file:///d:/projects/agent-orchestrator/docs/09-product/project-space-model.md) | ❌ Placeholder | **D** | 168B | Butunlay TODO |
+| [team-model.md](file:///d:/projects/agent-orchestrator/docs/09-product/team-model.md) | ❌ Placeholder | **D** | 135B | Butunlay TODO |
+| [user-personas.md](file:///d:/projects/agent-orchestrator/docs/09-product/user-personas.md) | ❌ Placeholder | **D** | 167B | Persona ro'yxati bor, needs TODO |
+| [visibility-model.md](file:///d:/projects/agent-orchestrator/docs/09-product/visibility-model.md) | ❌ Placeholder | **D** | 131B | Levels bor, rules TODO |
+
+> **Xulosa:** 2 to'liq, 9 placeholder. Ko'p ish bor. 🔴
+
+---
+
+## 10-platform/
+
+| Hujjat | Holat | Sifat | Hajm | Izoh |
+|--------|-------|-------|------|------|
+| [context-engineering-model.md](file:///d:/projects/agent-orchestrator/docs/10-platform/context-engineering-model.md) | ✅ To'liq | **B+** | 2.0KB | Context layers, filtering, budget |
+| [memory-architecture.md](file:///d:/projects/agent-orchestrator/docs/10-platform/memory-architecture.md) | ✅ To'liq | **B+** | 2.0KB | Memory types, scope, lifecycle |
+| [prompt-engineering-architecture.md](file:///d:/projects/agent-orchestrator/docs/10-platform/prompt-engineering-architecture.md) | ✅ To'liq | **B+** | 2.7KB | Prompt layers, registry, provider adaptation |
+| [runtime-and-provider-adapter-model.md](file:///d:/projects/agent-orchestrator/docs/10-platform/runtime-and-provider-adapter-model.md) | ✅ To'liq | **B+** | 3.0KB | Adapter contracts, capability model |
+| [context-assembly-pipeline.md](file:///d:/projects/agent-orchestrator/docs/10-platform/context-assembly-pipeline.md) | ✅ To'liq | **B** | 1.4KB | 8-bosqichli pipeline |
+| [agent-runtime-model.md](file:///d:/projects/agent-orchestrator/docs/10-platform/agent-runtime-model.md) | ❌ Placeholder | **D** | 246B | TODO |
+| [compute-layer.md](file:///d:/projects/agent-orchestrator/docs/10-platform/compute-layer.md) | ❌ Placeholder | **D** | 138B | TODO |
+| [event-bus-architecture.md](file:///d:/projects/agent-orchestrator/docs/10-platform/event-bus-architecture.md) | ❌ Placeholder | **D** | 221B | TODO |
+| [multi-region-strategy.md](file:///d:/projects/agent-orchestrator/docs/10-platform/multi-region-strategy.md) | ❌ Placeholder | **D** | 123B | TODO |
+| [platform-services.md](file:///d:/projects/agent-orchestrator/docs/10-platform/platform-services.md) | ❌ Placeholder | **D** | 187B | TODO |
+| [realtime-architecture.md](file:///d:/projects/agent-orchestrator/docs/10-platform/realtime-architecture.md) | ❌ Placeholder | **D** | 175B | TODO |
+| [scaling-model.md](file:///d:/projects/agent-orchestrator/docs/10-platform/scaling-model.md) | ❌ Placeholder | **D** | 143B | TODO |
+| [storage-architecture.md](file:///d:/projects/agent-orchestrator/docs/10-platform/storage-architecture.md) | ❌ Placeholder | **D** | 152B | TODO |
+| [workflow-engine.md](file:///d:/projects/agent-orchestrator/docs/10-platform/workflow-engine.md) | ❌ Placeholder | **D** | 196B | TODO |
+
+> **Xulosa:** 5 to'liq, 9 placeholder. ⚠️
+
+---
+
+## 11-ecosystem/
+
+| Hujjat | Holat | Sifat | Hajm | Izoh |
+|--------|-------|-------|------|------|
+| [agent-economy.md](file:///d:/projects/agent-orchestrator/docs/11-ecosystem/agent-economy.md) | ❌ Placeholder | **D** | 110B | TODO |
+| [marketplace-model.md](file:///d:/projects/agent-orchestrator/docs/11-ecosystem/marketplace-model.md) | ❌ Placeholder | **D** | 166B | TODO |
+| [monetization-model.md](file:///d:/projects/agent-orchestrator/docs/11-ecosystem/monetization-model.md) | ❌ Placeholder | **D** | 151B | TODO |
+| [template-economy.md](file:///d:/projects/agent-orchestrator/docs/11-ecosystem/template-economy.md) | ❌ Placeholder | **D** | 99B | TODO |
+| [trust-and-reputation.md](file:///d:/projects/agent-orchestrator/docs/11-ecosystem/trust-and-reputation.md) | ❌ Placeholder | **D** | 109B | TODO |
+| [workflow-economy.md](file:///d:/projects/agent-orchestrator/docs/11-ecosystem/workflow-economy.md) | ❌ Placeholder | **D** | 122B | TODO |
+
+> **Xulosa:** Butunlay placeholder. Lekin scope'da Phase 3+ ga deferred. 📋
+
+---
+
+## 12-experience/
+
+| Hujjat | Holat | Sifat | Hajm | Izoh |
+|--------|-------|-------|------|------|
+| [2d-workspace-patterns.md](file:///d:/projects/agent-orchestrator/docs/12-experience/2d-workspace-patterns.md) | ❌ Placeholder | **D** | 105B | TODO |
+| [3d-world-strategy.md](file:///d:/projects/agent-orchestrator/docs/12-experience/3d-world-strategy.md) | ❌ Placeholder | **D** | 170B | TODO |
+| [chat-and-command-surface.md](file:///d:/projects/agent-orchestrator/docs/12-experience/chat-and-command-surface.md) | ❌ Placeholder | **D** | 185B | TODO |
+| [digital-office-model.md](file:///d:/projects/agent-orchestrator/docs/12-experience/digital-office-model.md) | ❌ Placeholder | **D** | 235B | TODO |
+| [mode-experience-mapping.md](file:///d:/projects/agent-orchestrator/docs/12-experience/mode-experience-mapping.md) | ❌ Placeholder | **D** | 151B | TODO |
+| [operator-dashboard-model.md](file:///d:/projects/agent-orchestrator/docs/12-experience/operator-dashboard-model.md) | ❌ Placeholder | **D** | 214B | TODO |
+| [workspace-shell.md](file:///d:/projects/agent-orchestrator/docs/12-experience/workspace-shell.md) | ❌ Placeholder | **D** | 160B | TODO |
+
+> **Xulosa:** Butunlay placeholder. Phase 3 experience layer. 📋
+
+---
+
+## 13-decisions/
+
+| Hujjat | Holat | Sifat | Hajm | Izoh |
+|--------|-------|-------|------|------|
+| [open-questions.md](file:///d:/projects/agent-orchestrator/docs/13-decisions/open-questions.md) | ✅ To'liq | **A** | 2.9KB | OQ-001 dan OQ-008, resolved/open status |
+| [assumptions-register.md](file:///d:/projects/agent-orchestrator/docs/13-decisions/assumptions-register.md) | ❌ Placeholder | **D** | 103B | TODO |
+| [decision-backlog.md](file:///d:/projects/agent-orchestrator/docs/13-decisions/decision-backlog.md) | ❌ Placeholder | **D** | 101B | TODO |
+| [rejected-ideas.md](file:///d:/projects/agent-orchestrator/docs/13-decisions/rejected-ideas.md) | ❌ Placeholder | **D** | 110B | TODO |
+
+> **Xulosa:** 1 to'liq, 3 placeholder. ⚠️
+
+---
+
+## 14-research/
+
+| Hujjat | Holat | Sifat | Hajm | Izoh |
+|--------|-------|-------|------|------|
+| [ai-native-organization-research.md](file:///d:/projects/agent-orchestrator/docs/14-research/ai-native-organization-research.md) | ❌ Placeholder | **D** | 111B | TODO |
+| [competitive-landscape.md](file:///d:/projects/agent-orchestrator/docs/14-research/competitive-landscape.md) | ❌ Placeholder | **D** | 113B | TODO |
+| [market-thesis.md](file:///d:/projects/agent-orchestrator/docs/14-research/market-thesis.md) | ❌ Placeholder | **D** | 103B | TODO |
+| [virtual-workspace-research.md](file:///d:/projects/agent-orchestrator/docs/14-research/virtual-workspace-research.md) | ❌ Placeholder | **D** | 125B | TODO |
+| [workflow-automation-research.md](file:///d:/projects/agent-orchestrator/docs/14-research/workflow-automation-research.md) | ❌ Placeholder | **D** | 116B | TODO |
+
+> **Xulosa:** Butunlay placeholder. Research layer — keyinroq. 📋
+
+---
+
+## 📈 Umumiy statistika
+
+| Ko'rsatkich | Qiymat |
+|-------------|--------|
+| **Jami hujjatlar** | 106 (README'larni hisoblamasdan) |
+| **To'liq (A/B)** | **33** (31%) |
+| **Qisman (C)** | **5** (5%) |
+| **Placeholder (D)** | **61** (58%) |
+| **Template** | **7** (6%) |
+
+### Sifat bo'yicha taqsimot
+
+```
+A  darajali:  25 hujjat  ████████████████████████░  (24%)
+B  darajali:   8 hujjat  ████████░░░░░░░░░░░░░░░░░  ( 8%)
+C  darajali:   5 hujjat  █████░░░░░░░░░░░░░░░░░░░░  ( 5%)
+D  darajali:  61 hujjat  █████████████████████████████████████████████████ (58%)
+Template:      7 hujjat  ███████░░░░░░░░░░░░░░░░░░  ( 6%)
+```
+
+### Papka bo'yicha holat
+
+| Papka | Holat | To'liq/Jami |
+|-------|-------|-------------|
+| 00-foundation | ✅ 100% | 7/7 |
+| 01-architecture | ⚠️ 75% | 9/12 |
+| 02-standards | 🔴 22% | 2/9 |
+| 03-templates | ✅ Template | 5/5 |
+| 04-roadmap | ✅ 100% | 2/2 |
+| 05-governance | ⚠️ 25% | 2/8 |
+| 06-adrs | ✅ 100% | 5/5 |
+| 07-operations | ⚠️ 20% | 1/5 |
+| 08-worklogs | ✅ 100% | 1/1 |
+| 09-product | 🔴 18% | 2/11 |
+| 10-platform | ⚠️ 36% | 5/14 |
+| 11-ecosystem | 🔴 0% | 0/6 |
+| 12-experience | 🔴 0% | 0/7 |
+| 13-decisions | ⚠️ 25% | 1/4 |
+| 14-research | 🔴 0% | 0/5 |
+
+---
+
+> [!IMPORTANT]
+> Bu hujjat faqat holat baholash uchun. To'ldirish rejasi alohida taqdim etiladi.

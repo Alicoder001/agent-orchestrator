@@ -1,0 +1,4 @@
+interface:
+  display_name: "Agent Worklogs"
+  short_description: "Track agent work without noisy shared logs"
+  default_prompt: "Use $agent-worklog-management to set up or refine agent worklogs for this project."

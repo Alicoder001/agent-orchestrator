@@ -1,0 +1,4 @@
+interface:
+  display_name: "Monorepo Structure"
+  short_description: "Turn architecture into repo structure"
+  default_prompt: "Use $monorepo-structure to propose a clean monorepo layout for this project."

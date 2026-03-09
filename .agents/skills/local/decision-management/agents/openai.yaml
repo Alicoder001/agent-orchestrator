@@ -1,0 +1,4 @@
+interface:
+  display_name: "Decision Management"
+  short_description: "Track open questions and assumptions"
+  default_prompt: "Use $decision-management to organize the active decisions for this project."

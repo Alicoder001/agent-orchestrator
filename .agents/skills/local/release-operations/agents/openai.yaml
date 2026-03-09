@@ -1,0 +1,4 @@
+interface:
+  display_name: "Release Operations"
+  short_description: "Define releases, incidents, and change flow"
+  default_prompt: "Use $release-operations to draft release and operations rules for this platform."

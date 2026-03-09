@@ -1,0 +1,4 @@
+interface:
+  display_name: "Platform Architecture"
+  short_description: "Define services, runtime, and scale model"
+  default_prompt: "Use $platform-architecture to define the platform architecture for this system."

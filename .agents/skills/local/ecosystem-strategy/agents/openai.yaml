@@ -1,0 +1,4 @@
+interface:
+  display_name: "Ecosystem Strategy"
+  short_description: "Define marketplace and economy strategy"
+  default_prompt: "Use $ecosystem-strategy to shape the long-term ecosystem strategy for this platform."

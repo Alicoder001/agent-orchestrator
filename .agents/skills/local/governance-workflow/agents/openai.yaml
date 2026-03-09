@@ -1,0 +1,4 @@
+interface:
+  display_name: "Governance Workflow"
+  short_description: "Define project governance and working rules"
+  default_prompt: "Use $governance-workflow to draft governance rules for this project."

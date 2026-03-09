@@ -1,0 +1,4 @@
+interface:
+  display_name: "Workspace Experience"
+  short_description: "Define shell, dashboard, and workspace UX"
+  default_prompt: "Use $workspace-experience to define the experience model for this platform."

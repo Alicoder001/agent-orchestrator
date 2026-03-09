@@ -1,0 +1,4 @@
+interface:
+  display_name: "System Architecture"
+  short_description: "Define architecture before structure and code"
+  default_prompt: "Use $system-architecture to shape the architecture for this platform."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Business Logic Design"
+  short_description: "Define business rules and use case boundaries"
+  default_prompt: "Use $business-logic-design to map the core business logic for this system."

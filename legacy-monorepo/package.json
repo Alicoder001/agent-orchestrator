@@ -1,0 +1,22 @@
+{
+  "name": "@agent-orchestrator/root",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Next-generation monorepo for the Agent Orchestrator platform",
+  "packageManager": "pnpm@9.15.4",
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev --parallel",
+    "lint": "turbo run lint",
+    "test": "turbo run test",
+    "typecheck": "turbo run typecheck",
+    "clean": "turbo run clean"
+  },
+  "devDependencies": {
+    "turbo": "^2.5.6",
+    "typescript": "^5.9.2"
+  }
+}

@@ -1,0 +1,16 @@
+node_modules
+.pnpm-store
+.turbo
+dist
+dist-ui
+build
+.next
+coverage
+.DS_Store
+*.log
+.env
+.env.local
+.env.*.local
+target
+**/src-tauri/target/
+**/src-tauri/gen/

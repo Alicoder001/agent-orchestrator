@@ -1,0 +1,4 @@
+interface:
+  display_name: "Product Modeling"
+  short_description: "Turn platform vision into product models"
+  default_prompt: "Use $product-modeling to define the product model for this platform."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Docs Foundation"
+  short_description: "Shape foundation docs for greenfield work"
+  default_prompt: "Use $docs-foundation to draft or refine foundation docs for this new platform."

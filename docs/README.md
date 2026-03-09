@@ -1,8 +1,8 @@
-# Documentation
+# Hujjatlar
 
-This documentation tree is the source of truth for the new monorepo.
+Ushbu `docs/` daraxti yangi monorepo uchun asosiy manba va qarorlar markazi hisoblanadi.
 
-## Writing Order
+## Yozish tartibi
 
 1. `00-foundation`
 2. `09-product`
@@ -19,15 +19,19 @@ This documentation tree is the source of truth for the new monorepo.
 13. `08-worklogs`
 14. `14-research`
 
-## Rules
+## Asosiy qoidalar
 
-- Architecture decisions should be written before code structure is finalized.
-- Templates should standardize future docs, not replace thinking.
-- Roadmap should follow architecture, not drive it blindly.
-- Governance should define how the team and agents operate before execution scales.
-- ADRs should capture important technical decisions as they are made.
-- Worklogs should be append-only and simple enough to keep current.
-- General project understanding should live inside `docs`, but in dedicated layers:
-  - `00-foundation` for platform thesis and vision
-  - `09-product` for product identity and models
-  - `01-architecture` and `10-platform` for system design
+- Arxitektura qarorlari kod strukturasi yakunlanishidan oldin yoziladi.
+- Template hujjatlar fikrlash o'rnini bosmaydi, balki kelajakdagi ishni standartlashtiradi.
+- Roadmap arxitekturadan keyin shakllanadi, uni ko'r-ko'rona boshqarmaydi.
+- Governance bo'limi team va agentlar qanday ishlashini execution kengayishidan oldin belgilaydi.
+- ADR hujjatlari muhim texnik qarorlarni vaqtida qayd etib boradi.
+- Worklog'lar sodda va doimiy yuritiladigan append-only formatda bo'ladi.
+
+## Umumiy loyiha tasavvuri qayerda yoziladi
+
+Loyiha haqidagi umumiy tushuncha ham `docs/` ichida saqlanadi, lekin qatlamlarga ajratilgan holda:
+
+- `00-foundation` platforma maqsadi, vision va thesis uchun
+- `09-product` product identity va entity modellari uchun
+- `01-architecture` va `10-platform` tizim dizayni uchun

@@ -1,16 +1,22 @@
-# Agent Orchestrator
+# Legacy Monorepo
 
-This repository has been reset for a new, production-grade monorepo build.
+Ushbu papka oldingi `Agent Orchestrator` implementatsiyasining arxivlangan nusxasidir.
 
-## Structure
+## Maqsadi
 
-- `legacy-monorepo/`: archived previous implementation kept for reference only
-- `apps/`: deployable applications
-- `packages/`: shared libraries and domain modules
-- `tooling/`: reusable internal tooling and configs
+- oldingi arxitektura va UX qarorlarini saqlab qolish
+- migration jarayonida referens sifatida foydalanish
+- qayta ishlatilishi mumkin bo'lgan pattern va g'oyalarni yo'qotmaslik
 
-## Principles
+## Muhim eslatma
 
-- Keep the new monorepo clean and explicit.
-- Do not wire `legacy-monorepo/` into workspace tooling.
-- Build from stable boundaries first: apps, packages, tooling, docs.
+- Bu papka yangi aktiv monorepo emas.
+- Yangi root arxitektura va tooling shu legacy qatlamga ulanmaydi.
+- Bu yerga faqat tarixiy, tahliliy va referens manba sifatida qaraladi.
+
+## Ichki tuzilma
+
+- `packages/` oldingi product va plugin qatlamlari
+- `docs/` tarixiy hujjatlar va design materiallari
+- `scripts/` legacy operatsion scriptlar
+- `work-items/` rejalash va handoff materiallari

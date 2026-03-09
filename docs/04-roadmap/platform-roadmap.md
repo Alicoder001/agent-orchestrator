@@ -21,8 +21,16 @@ Roadmap arxitektura qarorlariga asoslanadi — u arxitekturani boshqarmaydi.
 - [x] System context
 - [x] Final technology stack qarorlari
 - [x] ADR-001, ADR-002, ADR-003
-- [ ] Product map
-- [ ] Repo governance (agent qoidalari)
+- [x] Product map
+- [x] Repo governance (agent qoidalari)
+- [x] Domain map
+- [x] Data architecture
+- [x] Security architecture
+- [x] Application architecture
+- [x] ADR-004 (Event Bus), ADR-005 (Frontend State)
+- [x] Agent operating model (coordination, escalation, override)
+- [x] Implementation sequencing (Phase 1 sprint plan)
+- [x] Open questions resolved (OQ-003, OQ-004, OQ-007)
 - [ ] Status board — faol holat kuzatuvi
 
 **Exit criteria:**
